@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css variable</title>
+    <style>
+      :root {
+        --primary-color: steelblue;
+        --secondary-color: blue;
+        --font-size: 20px;
+      }
+      h1 {
+        color: var(--primary-color);
+      }
+      h5 {
+        background-color: var(--primary-color);
+      }
+      .box p {
+        color: var(--primary-color);
+        width: calc(100% - 300px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>I'm doing something</h3>
+      <h5>Also known as CSS variables</h5>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+        consectetur, optio fuga exercitationem harum pariatur ratione deleniti
+        obcaecati veritatis ipsam, aliquid quis laudantium doloribus possimus
+        quos minima temporibus aspernatur enim?
+      </p>
+    </div>
+  </body>
+</html>
